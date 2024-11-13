@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pf Mf Alkalinities of Mud Filtrate</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="manifest" href="manifest.json" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Alkalinities of Mud Filtrate</h1>
+      <form id="AlkalinityForm">
+        <p>
+          <strong
+            >It is better to use more volume of Filtrate and Acid of 0.01 or
+            0.02 Normalities.</strong
+          >
+        </p>
+
+        <label for="VolOfFiltrate"
+          ><strong>Volume of Filtrate Taken, ml</strong></label
+        >
+        <input
+          type="number"
+          id="VolOfFiltrate"
+          name="VolOfFiltrate"
+          step="0.01"
+          placeholder="Enter volume in mL"
+          required
+        />
+
+        <label for="NAcid"><strong>Normality of Acid Used</strong></label>
+        <input
+          type="number"
+          id="NAcid"
+          name="NAcid"
+          step="0.01"
+          placeholder="Enter volume of acid in mL"
+          required
+        />
+
+        <label for="Pfiltrate"
+          ><strong
+            >Acid volume used with Phenolphthalein Indicator:</strong
+          ></label
+        >
+        <input
+          type="number"
+          id="Pfiltrate"
+          name="Pfiltrate"
+          step="0.01"
+          placeholder="Enter volume in mL"
+          required
+        />
+
+        <label for="Mfiltrate"
+          ><strong
+            >Acid Volume used with Methyl Orange Indicator:</strong
+          ></label
+        >
+        <input
+          type="number"
+          id="Mfiltrate"
+          name="Mfiltrate"
+          step="0.01"
+          placeholder="Enter volume in mL"
+          required
+        />
+
+        <button type="button" onclick="calculateAlkalinities()">
+          <strong>Calculate the Results</strong>
+        </button>
+      </form>
+
+      <div id="result"><strong></strong></div>
+
+      <!-- Footer with copyright notice -->
+      <footer>
+        <p>&copy; 2024 Ranjit Singh. All rights reserved.</p>
+      </footer>
+    </div>
+    <script src="script.js"></script>
+    <!-- Service Worker Registration -->
+    <script>
+      if ("serviceWorker" in navigator) {
+        navigator.serviceWorker
+          .register("./service-worker.js")
+          .then((registration) => {
+            console.log(
+              "Service Worker registered with scope:",
+              registration.scope
+            );
+          })
+          .catch((error) => {
+            console.error("Service Worker registration failed:", error);
+          });
+      }
+    </script>
+  </body>
+</html>

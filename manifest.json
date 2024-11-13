@@ -1,0 +1,40 @@
+{
+  "name": "Mud Filtrate Alkalinity",
+  "short_name": "MudAlka",
+  "start_url": "index.html",
+  "id": "/index.html",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#4CAF50",
+  "icons": [
+    {
+      "src": "maskable512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "icon192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "SSNarrow450x800.png",
+      "sizes": "450x800",
+      "type": "image/png",
+      "form_factor": "narrow"
+    },
+    {
+      "src": "SSWide950x650.png",
+      "sizes": "950x650",
+      "type": "image/png",
+      "form_factor": "wide"
+    }
+  ],
+  "window_controls_overlay": {
+    "color": "#ffffff"
+  },
+  "description": "This app calculates Pf, Mf alkalinities of Mud Filtrate"
+}
